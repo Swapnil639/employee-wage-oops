@@ -1,11 +1,11 @@
 package com.bridgelabz.oops;
 
 public class EmployeeWage {
-    static int IS_FULL_TIME = 1;
-    static int Is_PART_TIME = 2;
-    static int EMP_WAGE_PER_HOUR = 20;
+    static final int IS_FULL_TIME = 1;
+    static final int Is_PART_TIME = 2;
+    static final int EMP_WAGE_PER_HOUR = 20;
 
-    static void partTimeEmployeeWage() {
+    static void switchCaseStatement() {
         int empHrs = 0;
         int empWage = 0;
         int empCheck = (int) (Math.floor(Math.random() * 10) % 3);
@@ -17,12 +17,17 @@ public class EmployeeWage {
         else
             System.out.println("Employee Absent");
 
-        if (empCheck == IS_FULL_TIME) {
-            empHrs = 8;
-        } else if (empCheck == Is_PART_TIME) {
-            empHrs = 4;
-        } else
-            empHrs = 0;
+        switch (empCheck)
+        {
+            case IS_FULL_TIME :
+                empHrs=8;
+                break;
+            case Is_PART_TIME :
+                empHrs=4;
+                break;
+            default:
+                empHrs=0;
+        }
 
         empWage = empHrs * EMP_WAGE_PER_HOUR;
         System.out.println("Employee Hours :" + empHrs);
@@ -32,12 +37,10 @@ public class EmployeeWage {
 
     public static void main(String[] args)
     {
-        partTimeEmployeeWage();
+        switchCaseStatement();
     }
 
 }
-
-
 
 
 
