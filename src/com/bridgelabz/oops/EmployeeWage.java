@@ -7,14 +7,14 @@ public class EmployeeWage {
     static final int NUM_0F_WORKING_DAYS = 20;
     static final int NUM_OF_WORKING_HOURS = 100;
 
-    static void totalWorkingDaysOrHour() {
+    static void computeEmpWage() {
         int empHrs = 0;
         int empWage = 0;
         int totalEmpHrs = 0;
         int totalWorkingDays = 0;
         int totalEmpWage = 0;
 
-        while(totalEmpHrs<=NUM_OF_WORKING_HOURS && totalWorkingDays<NUM_0F_WORKING_DAYS) {
+        while (totalEmpHrs <= NUM_OF_WORKING_HOURS && totalWorkingDays < NUM_0F_WORKING_DAYS) {
             totalWorkingDays++;
             int empCheck = (int) (Math.floor(Math.random() * 10) % 3);
 
@@ -24,23 +24,20 @@ public class EmployeeWage {
                 empHrs = 4;
             else
                 empHrs = 0;
-            empWage=empHrs*EMP_RATE_PER_HOUR;
-            totalEmpWage +=empWage;
-            totalEmpHrs +=empHrs;
-            System.out.println("Day "+totalWorkingDays+":"+empHrs+"*"+EMP_RATE_PER_HOUR+"="+empWage);
+            empWage = empHrs * EMP_RATE_PER_HOUR;
+            totalEmpWage += empWage;
+            totalEmpHrs += empHrs;
+            System.out.println("Day " + totalWorkingDays + ":" + empHrs + "*" + EMP_RATE_PER_HOUR + "=" + empWage);
         }
 
-        System.out.println("Total Employee Working Days :"+totalWorkingDays);
-        System.out.println("Total Employee Working Hours :"+totalEmpHrs);
-        System.out.println("Total Employee Wage :"+totalEmpWage);
+        System.out.println("Total Employee Working Days :" + totalWorkingDays);
+        System.out.println("Total Employee Working Hours :" + totalEmpHrs);
+        System.out.println("Total Employee Wage :" + totalEmpWage);
     }
 
     public static void main(String[] args) {
 
-        totalWorkingDaysOrHour();
+        computeEmpWage();
     }
 }
-
-
-
 
