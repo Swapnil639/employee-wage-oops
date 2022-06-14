@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de59bea4-9ac1-4d0e-bd66-1bb0dc9c3eb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/oops/EmployeeWage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/oops/EmployeeWage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
