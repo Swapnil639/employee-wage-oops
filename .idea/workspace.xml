@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de59bea4-9ac1-4d0e-bd66-1bb0dc9c3eb6" name="Changes" comment="" />
+    <list default="true" id="de59bea4-9ac1-4d0e-bd66-1bb0dc9c3eb6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/oops/EmployeeWage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/oops/EmployeeWage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +35,20 @@
     "last_opened_file_path": "Z:/Practice"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EmpWage">
+    <configuration name="EmpWage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.oops.EmpWage" />
+      <module name="employee-wage-oops" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.oops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EmployeeWage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.oops.EmployeeWage" />
       <module name="employee-wage-oops" />
@@ -49,6 +64,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmpWage" />
         <item itemvalue="Application.EmployeeWage" />
       </list>
     </recent_temporary>
