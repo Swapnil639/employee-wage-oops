@@ -1,6 +1,7 @@
 package com.bridgelabz.oops;
 
-public class EmployeeWage {
+public class EmployeeWage implements IEmpWage {
+
     public static final int IS_PART_TIME = 1;
     public static final int IS_FULL_TIME = 2;
 
@@ -33,8 +34,8 @@ public class EmployeeWage {
 
         while (totalWorkingDays <= companyEmpWage.getNumOfWorkingDays() && totalEmpHrs < companyEmpWage.getMaxHoursPerMonth()) {
             totalWorkingDays++;
-            int empCheck = (int) Math.floor(Math.random() * 10) % 3;
-            switch (empCheck) {
+            double empCheck = (int) Math.floor(Math.random() * 10) % 3;
+            switch ((int) empCheck) {
                 case IS_FULL_TIME:
                     empHrs = 8;
                     break;
